@@ -1,0 +1,14 @@
+
+body::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 0.25em 0.5em;
+
+    content: "This is added by 'Foo' library.";
+
+    background: wheat;
+    text-align: right;
+}
+
