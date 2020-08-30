@@ -1,0 +1,6 @@
+<div class="hero description-appearance color-text-weak text-largish {{ wrapper_extra_classes | default('') }}">
+    {% if hero_content is defined %}
+        {{ hero_content | raw }}
+    {% endif %}
+</div>
+

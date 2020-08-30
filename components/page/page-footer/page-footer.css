@@ -1,0 +1,12 @@
+
+.page__footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.page__footer > * {
+    flex: 0 1 auto;
+}
+

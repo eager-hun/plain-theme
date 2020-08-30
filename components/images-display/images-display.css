@@ -1,0 +1,21 @@
+
+.c-images-display__description {
+    margin-bottom: 2.5rem;
+}
+
+.c-images-display__image-frame {
+    text-align: center;
+}
+
+.c-images-display__image-caption {
+    margin: 0.5rem 0 0;
+    padding: 0 5%;
+
+    text-align: center;
+}
+
+.c-images-display__image-caption + .c-images-display__image-frame {
+    margin-top: 1.25rem;
+}
+
+

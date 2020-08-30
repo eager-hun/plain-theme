@@ -1,0 +1,16 @@
+
+.stackable--small {
+    margin-top: var(--vari-gap-small);
+    margin-bottom: var(--vari-gap-small);
+}
+
+.stackable {
+    margin-top: var(--vari-gap);
+    margin-bottom: var(--vari-gap);
+}
+
+.stackable--large {
+    margin-top: var(--vari-large);
+    margin-bottom: var(--vari-large);
+}
+

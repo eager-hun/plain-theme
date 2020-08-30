@@ -1,0 +1,20 @@
+
+.description-appearance {
+  font-style: italic;
+}
+.description-appearance strong {
+    color: currentColor;
+}
+.description-appearance p,
+.description-appearance ul,
+.description-appearance ol {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    line-height: var(--line-height-condensed);
+}
+.description-appearance em {
+    /*To make it stand out in an all-italic text.*/
+    font-style: normal;
+}
+

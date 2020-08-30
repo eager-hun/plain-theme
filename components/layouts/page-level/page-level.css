@@ -1,0 +1,38 @@
+/**
+Page levels and page centering.
+
+Horizontal sections - often seen as full-width colourful stripes - on the page.
+*/
+
+.page-level {
+    min-width: var(--page-min-width);
+
+    padding-left: var(--vari-gap-small);
+    padding-right: var(--vari-gap-small);
+}
+
+.page-level.has-bg {
+    padding-top: var(--vari-gap-large);
+    padding-bottom: var(--vari-gap-large);
+}
+
+.page-level__content {
+    max-width: var(--content-area-max-width);
+
+    margin-top: var(--vari-gap-large);
+    margin-bottom: var(--vari-gap-large);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.has-bg .page-level__content {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-level__title,
+.page-level-title-appearance {
+  margin-top: 0;
+  margin-bottom: var(--vari-gap);
+}
+

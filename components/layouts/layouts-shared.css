@@ -1,0 +1,25 @@
+/**
+ * Layouts' shared rules.
+ */
+
+/*See http://nicolasgallagher.com/micro-clearfix-hack/ .*/
+/*WARNING: This rule interferes with ::before and ::after pseudo-elements.*/
+/*Take that into account when applying this anywhere.*/
+.micro-clearfix::before,
+.micro-clearfix::after {
+    content: '';
+    display: table;
+}
+.micro-clearfix::after {
+    clear: both;
+}
+
+
+
+.fit-content > *:first-child {
+    margin-top: 0;
+}
+.fit-content > *:last-child {
+    margin-bottom: 0;
+}
+

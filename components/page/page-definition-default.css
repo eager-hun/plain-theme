@@ -1,0 +1,54 @@
+
+/* Page header and footer. */
+
+.page__header,
+.page__footer {
+    padding-left: var(--vari-gap-small);
+    padding-right: var(--vari-gap-small);
+
+    padding-top: var(--vari-gap-small);
+    padding-bottom: var(--vari-gap-small);
+}
+
+
+/* Page main. */
+
+.page__title,
+.page-title-appearance {
+    margin-top: 0;
+    margin-bottom: var(--vari-gap);
+}
+
+.system-notifications {
+    @include squeeze();
+}
+
+
+/* Page footer. */
+
+:root {
+    --footer-height: 5rem;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.page__wrap {
+    min-height: 100%;
+    margin-bottom: calc(var(--footer-height) * -1);
+}
+
+.footer__room-preserve,
+.page__footer {
+    height: var(--footer-height);
+}
+
+/* Misc. */
+
+#svg-sprite-housing {
+    position: absolute;
+    left: -10000em;
+}
+

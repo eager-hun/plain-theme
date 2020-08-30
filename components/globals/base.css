@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font-sans);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+
+    background: white;
+    color: var(--color-text);
+}
+
+body {
+    background: white;
+    color: var(--color-text);
+}
+
+p {
+    margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+a,
+a:active {
+    color: var(--color-link);
+}
+a:focus {
+    outline: 1px dotted currentColor;
+    outline-offset: 1px;
+}
+a:visited {
+    color: var(--color-link-visited);
+}
+a:hover {
+    color: var(--color-link-hover);
+}
+a:visited:hover {
+    color: var(--color-link-visited-hover);
+}
+
+strong {
+    color: var(--color-text-strong);
+}
+
+ul {
+    padding-left: 1em;
+}
+
+ol {
+    padding-left: 1.35em;
+}
+
+dl {
+
+}
+
+dt {
+    color: var(--color-text-strong);
+    font-weight: 700;
+}
+dd + dt {
+    margin-top: 0.3em;
+}
+
+dd {
+    margin-left: 1em;
+}
+
+blockquote {
+  margin: 2em 0 2em 2em;
+  padding: 1.5em 0 1.5em 1.5em;
+
+  border-left: 2px solid var(--color-border);
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--font-mono);
+
+  background: var(--color-blockfill);
+}
+
+pre {
+  padding: 1em;
+}
+
+code {
+  /*Don't wrap, not even at hyphens.*/
+  hyphens: none;
+  white-space: nowrap;
+}
+
+pre code {
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+
+    hyphens: initial;
+    word-wrap: normal;
+    white-space: pre;
+
+    font-size: 0.9em;
+}
+
+hr {
+  margin-top: var(--gap-small);
+  margin-bottom: var(--gap-small);
+
+  height: 0;
+  background: 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+::selection {
+  background: rgba(var(--color-brand-rgb), 1);
+  color: var(--color-text-invert);
+}
+::-moz-selection {
+  background: rgba(var(--color-brand-rgb), 1);
+  color: var(--color-text-invert);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+

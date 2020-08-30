@@ -1,0 +1,14 @@
+<a
+    class="cta-tile {{ wrapper_extra_classes | default('') }}"
+    href="{{ tile_href }}"
+    style="background-image: url('{{ css_background_image }}');"
+>
+    {% if tile_label | default('') is not empty %}
+        <span class="cta-tile__aspect-ratio">
+            <span class="cta-tile__label">
+                {{ tile_label | raw }}
+            </span>
+        </span>
+    {% endif %}
+</a>
+

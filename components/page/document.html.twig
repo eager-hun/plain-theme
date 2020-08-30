@@ -1,0 +1,31 @@
+<!doctype html>
+<html {{ document_attributes | default('') | raw }}>
+<head>
+
+    <meta charset="UTF-8">
+    <title>{{ head_title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if head_desc | default('') is not empty %}
+        <meta name="description" content="{{ head_desc }}">
+    {% endif %}
+
+    {{ head_misc | raw }}
+    {{ stylesheets | raw }}
+    {{ scripts_in_head | raw }}
+
+    <!-- Favicon placeholder, to prevent 404s. -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+</head>
+<body class="{{ body_classes }}">
+    {{ svg_sprites | default('') | raw }}
+
+    {{ body_content | raw }}
+
+    {% if app_menu | default('') is not empty %}
+        {{ app_menu | raw }}
+    {% endif %}
+    {{ scripts_in_body | raw }}
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.pseudo-heading {
+    display: block;
+    line-height: var(--line-height-headings);
+
+    font-family: var(--font-sans);
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+
+    color: var(--color-text-strong);
+}
+
+h1,
+.h1 {
+    font-size: 2rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+h2,
+.h2 {
+    font-size: 1.6rem;
+    margin-top: 1.75em;
+    margin-bottom: 0.85em;
+}
+h3,
+.h3 {
+    font-size: 1.45rem;
+    margin-top: 1.75em;
+    margin-bottom: 0.85em;
+}
+h4,
+.h4 {
+    font-size: 1.3rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.65em;
+}
+h5,
+.h5 {
+    font-size: 1.15rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.65em;
+}
+h6,
+.h6 {
+    font-size: 1.05rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+h2.underlined,
+.h2.underlined {
+    font-size: 1.6rem;
+    margin-top: 1.75em;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.85em;
+
+    border-bottom: 1px solid var(--color-border);
+}
+

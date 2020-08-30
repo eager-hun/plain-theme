@@ -1,0 +1,31 @@
+
+.grid-item + .grid-item {
+    margin-top: var(--grid-gutter-width);
+}
+
+@media(min-width: 600px) {
+    .grid {
+        display: flex;
+        align-items: stretch;
+
+        margin-left: calc(var(--grid-gutter-width) * -1);
+    }
+
+    .grid-item {
+        flex: 0 1 auto;
+
+        margin-left: var(--grid-gutter-width);
+    }
+
+    .grid-item + .grid-item {
+        margin-top: 0;
+    }
+
+    .grid-item--half {
+        width: 50% !important;
+    }
+
+    .grid-item--third {
+        width: 33.3% !important;
+    }
+}

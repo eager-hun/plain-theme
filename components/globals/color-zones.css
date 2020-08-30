@@ -1,0 +1,94 @@
+
+.color-zone--brand {
+    background-color: var(--color-brand);
+    color: rgba(var(--color-text-invert-rgb), 0.95);
+
+    -webkit-tap-highlight-color: rgba(var(--color-brand-rgb), 0.25);
+}
+
+.color-zone--brand a:not(.button),
+.color-zone--brand a:not(.button):active,
+.color-zone--brand a:not(.button):visited {
+    color: rgba(var(--color-text-invert-rgb), 0.95);
+}
+.color-zone--brand a:not(.button):hover,
+.color-zone--brand a:not(.button):visited:hover {
+    color: rgba(var(--color-text-invert-rgb), 0.95);
+}
+
+.color-zone--brand::selection,
+.color-zone--brand ::selection {
+    background: rgba(var(--color-bg-dark-rgb), 0.5);
+    color: var(--color-text-invert);
+}
+.color-zone--brand::-moz-selection,
+.color-zone--brand ::-moz-selection {
+    background: rgba(var(--color-bg-dark-rgb), 0.5);
+    color: var(--color-text-invert);
+}
+
+
+
+
+
+
+
+.color-zone--accent-1 {
+  /*@include color-zone-accent-1();*/
+}
+
+
+
+
+
+
+.color-zone--accent-2 {
+  /*@include color-zone-accent-2();*/
+}
+
+
+
+
+
+
+.color-zone--dark {
+    background-color: var(--color-bg-dark);
+    color: rgba(var(--color-text-invert-rgb), 0.95);
+}
+.color-zone--dark a:not(.button),
+.color-zone--dark a:not(.button):active,
+.color-zone--dark a:not(.button):visited {
+    color: rgba(var(--color-text-invert-rgb), 0.95);
+}
+.color-zone--dark a:not(.button):hover,
+.color-zone--dark a:not(.button):visited:hover {
+    color: rgba(var(--color-text-invert-rgb), 0.95);
+}
+
+
+
+
+
+.color-zone--blockfill {
+    background: var(--color-blockfill);
+    color: var(--color-text-strong);
+}
+
+
+
+
+
+
+.color-zone:not(.color-zone--blockfill) strong,
+.color-zone:not(.color-zone--blockfill) dt,
+.color-zone:not(.color-zone--blockfill) h1,
+.color-zone:not(.color-zone--blockfill) h2,
+.color-zone:not(.color-zone--blockfill) h3,
+.color-zone:not(.color-zone--blockfill) h4,
+.color-zone:not(.color-zone--blockfill) h5,
+.color-zone:not(.color-zone--blockfill) h6,
+.color-zone:not(.color-zone--blockfill) .pseudo-heading,
+.color-zone:not(.color-zone--blockfill) .box__title {
+    color: var(--color-text-invert);
+}
+

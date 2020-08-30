@@ -1,0 +1,54 @@
+.cta-tile {
+    display: block;
+
+    background-color: var(--color-blockfill);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    border: none;
+    text-decoration: none;
+}
+
+.cta-tile__aspect-ratio {
+    position: relative;
+
+    display: block;
+    padding-top: 70%;
+}
+
+.cta-tile__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: block;
+    padding: 0.5rem 1em;
+
+    font-size: 1.15em;
+    font-weight: 700;
+
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--color-text-shy);
+    text-align: center;
+}
+
+.cta-tile--mountains {
+    background-position: center bottom;
+    background-size: 145%;
+}
+
+.cta-tile--drawings {
+    background-position: 20% 61%;
+    background-size: 160%;
+}
+
+@media (min-width: 1000px) {
+    .cta-tile__label {
+        padding: 1rem;
+
+        font-size: 1.2rem;
+    }
+}

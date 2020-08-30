@@ -1,0 +1,54 @@
+
+.textbox {
+
+}
+
+.textbox--highlight {
+
+}
+
+.textbox--note {
+
+}
+
+/* FIXME. */
+.notification .svg-icon {
+    display: none;
+}
+.notification,
+.sys-note {
+    padding: var(--gap-small);
+}
+
+.notification + .notification,
+.sys-note + .sys-note {
+    margin-top: var(--gap-micro);
+}
+
+
+/* FIXME. */
+
+.notification--info,
+.sys-note--info {
+    background: var(--color-info-light);
+    color: var(--color-info);
+}
+
+.notification--success,
+.sys-note--success {
+    background: var(--color-success-light);
+    color: var(--color-success);
+}
+
+.notification--warning,
+.sys-note--warning {
+    background: var(--color-warning-light);
+    color: var(--color-warning);
+}
+
+.notification--alert,
+.sys-note--alert {
+    background: var(--color-alert-light);
+    color: var(--color-alert);
+}
+

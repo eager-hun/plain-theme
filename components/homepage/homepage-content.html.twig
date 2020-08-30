@@ -1,0 +1,13 @@
+<div class="homepage-content__wrapper">
+    <div class="homepage-content {{ wrapper_extra_classes | default('') }}">
+        {% for tile in tiles %}
+            {% include 'tiles/cta-tile/cta-tile.html.twig' with {
+                'wrapper_extra_classes': tile.wrapper_extra_classes,
+                'tile_label': tile.label,
+                'tile_href': tile.href,
+                'css_background_image': tile.bg,
+            } %}
+        {% endfor %}
+    </div>
+</div>
+

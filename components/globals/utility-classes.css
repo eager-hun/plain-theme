@@ -1,0 +1,37 @@
+
+.text-smallish {
+    font-size: 0.9em !important;
+}
+
+.text-largish {
+    font-size: 1.05em !important;
+}
+
+.text-strong {
+    color: var(--color-text-strong) !important;
+}
+
+.text-compact {
+    line-height: var(--line-height-compact) !important;
+}
+
+.text-condensed {
+    line-height: var(--line-height-condensed) !important;
+}
+
+.text-airy {
+    line-height: var(--line-height-airy) !important;
+}
+
+.text-spacious {
+    line-height: var(--line-height-spacious) !important;
+}
+
+.color-text-weak {
+    color: var(--color-text-weak) !important;
+}
+
+.color-text-shy {
+    color: var(--color-text-shy) !important;
+}
+
