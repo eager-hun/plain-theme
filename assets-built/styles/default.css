@@ -479,7 +479,7 @@ body {
 
 .page-header__site-name {
   font-weight: 700;
-  font-size: 1.15em;
+  font-size: 1.2em;
   letter-spacing: 0.075em;
 }
 
@@ -491,7 +491,7 @@ body {
 
 .page-header__site-tagline {
   margin-left: 0.75em;
-  font-size: 0.9em;
+  font-size: 1em;
 
   font-style: italic;
 }
