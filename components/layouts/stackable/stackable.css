@@ -10,7 +10,7 @@
 }
 
 .stackable--large {
-    margin-top: var(--vari-large);
-    margin-bottom: var(--vari-large);
+    margin-top: var(--vari-gap-large);
+    margin-bottom: var(--vari-gap-large);
 }
 
