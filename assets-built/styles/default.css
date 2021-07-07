@@ -53,7 +53,7 @@
     /* Layouts. */
 
     --page-min-width:           300px;
-    --content-area-max-width:   960px;
+    --content-area-max-width:   1200px;
 
     --grid-gutter-width:        1.5rem;
 
@@ -69,7 +69,7 @@
     --vari-gap-large:           var(--gap-large);
     --vari-gap-mega:            var(--gap-mega);
 
-    --squeeze-width:            100%;
+    --squeeze-width:            1000px;
 }
 
 @media (min-width: 500px) {
@@ -576,15 +576,25 @@ body {
 }
 
 .stackable--large {
-    margin-top: var(--vari-large);
-    margin-bottom: var(--vari-large);
+    margin-top: var(--vari-gap-large);
+    margin-bottom: var(--vari-gap-large);
 }
 
 .squeeze {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  max-width: var(--squeeze-width);
+@media (min-width: 800px) {
+    .squeeze {
+        max-width: var(80%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .squeeze {
+        max-width: var(--squeeze-width);
+    }
 }
 
 /**
@@ -735,24 +745,42 @@ Horizontal sections - often seen as full-width colourful stripes - on the page.
 
 
 .c-images-display__description {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .c-images-display__image-frame {
     text-align: center;
 }
 
-.c-images-display__image-caption {
-    margin: 0.5rem 0 0;
-    padding: 0 5%;
+.c-images-display__image-frame img {
+    vertical-align: bottom;
+}
 
+.c-images-display__image-caption {
+    margin-top: 0.5rem;
     text-align: center;
 }
 
-.c-images-display__image-caption + .c-images-display__image-frame {
-    margin-top: 1.25rem;
+.c-images-display__image-caption:not(.squeeze) {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
+.c-images-display__item + .c-images-display__item {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .c-images-display__item.has-no-caption + .c-images-display__item {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .c-images-display__item.has-no-caption + .c-images-display__item {
+        margin-top: 4.5rem;
+    }
+}
 
 
 .text-smallish {
