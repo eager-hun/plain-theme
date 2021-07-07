@@ -12,18 +12,22 @@
 
     <div class="c-images-display__images">
         {% for image in images %}
-            <div class="c-images-display__image-frame {{ item.frame_extra_classes | default('') }}">
-                <img
-                    src="{{ image.src }}"
-                    class="c-images-display__image {{ image.extra_classes | default('') }}"
-                    {% if image.alt is defined %}alt="{{ image.alt }}"{% endif %}
-                    {% if image.title is defined %}title="{{ image.title }}"{% endif %}
-                    style="vertical-align: bottom"
-                >
+            <div class="c-images-display__item{% if image.desc_html is not defined %} has-no-caption{% endif %}">
+                {% if image.src is defined %}
+                    <div class="c-images-display__image-frame {{ item.frame_extra_classes | default('') }}">
+                        <img
+                            src="{{ image.src }}"
+                            class="c-images-display__image {{ image.extra_classes | default('') }}"
+                            {% if image.alt is defined %}alt="{{ image.alt }}"{% endif %}
+                            {% if image.title is defined %}title="{{ image.title }}"{% endif %}
+                        >
+                    </div>
+                {% endif %}
+
+                {% if image.desc_html is defined %}
+                    <div class="c-images-display__image-caption description-appearance text-smallish color-text-weak text-condensed">{{ image.desc_html | raw }}</div>
+                {% endif %}
             </div>
-            {% if image.desc_html is defined %}
-                <p class="c-images-display__image-caption description-appearance text-smallish color-text-weak text-condensed">{{ image.desc_html | raw }}</p>
-            {% endif %}
         {% endfor %}
     </div>
 </div>
