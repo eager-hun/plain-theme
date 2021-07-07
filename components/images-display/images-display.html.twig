@@ -2,12 +2,14 @@
 <div class="c-images-display">
     {% if title_html is defined %}
         <{{ title_tag | default('h2') }}
-            class="c-images-display__title h3 {{ title_extra_classes | default('') }}"
+     class="c-images-display__title h3{% if squeeze_texts | default('') %} squeeze{% endif %} {{ title_extra_classes | default('') }}"
         >{{ title_html | raw }}</{{ title_tag | default('h2') }}>
     {% endif %}
 
     {% if description_html is defined %}
-        <div class="c-images-display__description">{{ description_html | raw }}</div>
+        <div class="c-images-display__description{% if squeeze_texts | default('') %} squeeze{% endif %}">
+            {{ description_html | raw }}
+        </div>
     {% endif %}
 
     <div class="c-images-display__images">
@@ -25,7 +27,9 @@
                 {% endif %}
 
                 {% if image.desc_html is defined %}
-                    <div class="c-images-display__image-caption description-appearance text-smallish color-text-weak text-condensed">{{ image.desc_html | raw }}</div>
+                    <div class="c-images-display__image-caption description-appearance text-smallish color-text-weak text-condensed{% if squeeze_texts | default('') %} squeeze{% endif %}">
+                        {{ image.desc_html | raw }}
+                    </div>
                 {% endif %}
             </div>
         {% endfor %}

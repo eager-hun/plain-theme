@@ -53,7 +53,7 @@
     /* Layouts. */
 
     --page-min-width:           300px;
-    --content-area-max-width:   960px;
+    --content-area-max-width:   1200px;
 
     --grid-gutter-width:        1.5rem;
 
@@ -69,7 +69,7 @@
     --vari-gap-large:           var(--gap-large);
     --vari-gap-mega:            var(--gap-mega);
 
-    --squeeze-width:            100%;
+    --squeeze-width:            1000px;
 }
 
 @media (min-width: 500px) {

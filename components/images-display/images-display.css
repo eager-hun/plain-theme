@@ -13,9 +13,12 @@
 
 .c-images-display__image-caption {
     margin-top: 0.5rem;
-    padding: 0 5%;
-
     text-align: center;
+}
+
+.c-images-display__image-caption:not(.squeeze) {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .c-images-display__item + .c-images-display__item {
